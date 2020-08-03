@@ -64,3 +64,28 @@ p {
   font-size: 30px;
   text-align: right;
 }
+
+.swap-rate-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rate {
+  color: var(--primary-color);
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+/* When less than 600px input shifts to center */
+@media (max-width: 600px) {
+  .currency input {
+    width: 200px;
+  }
+}
